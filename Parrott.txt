@@ -1,0 +1,7 @@
+Quickly describe the exact changes you made and why you made them. Discuss how you approached the problem and exactly how you determined the source of the problem. Discuss which debugger commands you found most helpful.
+I started by setting a breakpoint at the location the segfault happened, line 466 of lookup.c. I was able to figure out that the variable "dp" was being set to NULL at some point prior to that line for the word "LUCY". I set a breakpoint higher up to see if I could determine when the variable was being set to NULL, and I was able to determine that it happened during the for loop. I tried adding a conditional before the loop that checked the status of dp and dp->next, but this did not work. Finally, I tried adding the condition "dp != NULL" to the loop's parameter list. This fixed the segfault.
+
+The most helpful debugger commands for this lab were the breakpoints and print commands. I looked at the backtrace info, but it was not particularly helpful or necessary in this case. The watch command was obviously useful for the second part of the lab, since that was the whole premise of the second portion.
+
+List (in order) the modifications of my_watch, including both the old value and new value it was set with. 
+See included file, "my_watch info.txt".
