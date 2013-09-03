@@ -460,7 +460,7 @@ struct dent * lookup (s, dotree)
     dp = &hashtbl[hash (s, hashsize)];
     if (ichartostr (schar, s, sizeof schar, 1))
 	(void) fprintf (stderr, WORD_TOO_LONG (schar));
-    for (  ;  ;  dp = dp->next)
+    for (  ; dp != NULL ;  dp = dp->next)
 	{
 	/* quick strcmp, but only for equality */
 	s1 = dp->word;
