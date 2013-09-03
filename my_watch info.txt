@@ -1,0 +1,72 @@
+my_watch debug info
+
+Old value = 0
+New value = 2
+0x0000000000409634 in main (argc=3, argv=0x7fffffffd610) at ispell.c:303
+303		arglen = my_watch = strlen (*argv);
+
+
+Old value = 2
+New value = 248
+linit () at lookup.c:391
+391	    inited = 1;
+
+
+Old value = 248
+New value = 228
+trydict (filename=0x616bc0 <personaldict> "", home=0x0, prefix=0x410a4e ".ispell_", suffix=0x7fffffffdae9 "americanmed+") at tree.c:273
+273	    if (home == NULL)
+
+
+Old value = 228
+New value = 208
+trydict (filename=0x7fffffffc4b0 "", home=0x7fffffffead4 "/home/wparrott", prefix=0x410a4e ".ispell_", suffix=0x7fffffffdae9 "americanmed+") at tree.c:273
+273	    if (home == NULL)
+
+
+Old value = 208
+New value = 188
+trydict (filename=0x616bc0 <personaldict> "", home=0x0, prefix=0x410a4e ".ispell_", suffix=0x410a57 "words") at tree.c:273
+273	    if (home == NULL)
+
+
+Old value = 188
+New value = 168
+trydict (filename=0x7fffffffc4b0 "", home=0x7fffffffead4 "/home/wparrott", prefix=0x410a4e ".ispell_", suffix=0x410a57 "words") at tree.c:273
+273	    if (home == NULL)
+
+
+Old value = 168
+New value = 169
+treeinit (p=0x0, LibDict=0x7fffffffdae9 "americanmed+") at tree.c:167
+167		if (dictf == NULL  &&  secondf == NULL)
+
+
+Old value = 169
+New value = 149
+trydict (filename=0x616bc0 <personaldict> "", home=0x0, prefix=0x410a4e ".ispell_", suffix=0x7fffffffdae9 "americanmed+") at tree.c:273
+273	    if (home == NULL)
+
+
+Old value = 149
+New value = 129
+trydict (filename=0x7fffffffc4b0 "", home=0x7fffffffead4 "/home/wparrott", prefix=0x410a4e ".ispell_", suffix=0x7fffffffdae9 "americanmed+") at tree.c:273
+273	    if (home == NULL)
+
+
+Old value = 129
+New value = 180
+treeinit (p=0x0, LibDict=0x7fffffffdae9 "americanmed+") at tree.c:173
+173		if (dictf == NULL  &&  secondf == NULL)
+
+
+Old value = 180
+New value = 160
+trydict (filename=0x616bc0 <personaldict> "", home=0x0, prefix=0x410a4e ".ispell_", suffix=0x410a57 "words") at tree.c:273
+273	    if (home == NULL)
+
+
+Old value = 160
+New value = 140
+trydict (filename=0x7fffffffc4b0 "", home=0x7fffffffead4 "/home/wparrott", prefix=0x410a4e ".ispell_", suffix=0x410a57 "words") at tree.c:273
+273	    if (home == NULL)
